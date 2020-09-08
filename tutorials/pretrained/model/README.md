@@ -66,6 +66,7 @@ test_file = next(protocol.test())
 from pyannote.audio.features import Pretrained
 sad = Pretrained(validate_dir='/path/to/validation/directory')
 ```
+It is also possible to tune the parameters for device and batch size within `Pretrained` class.
 
 :warning: If you would like to test those models on your own data, you could do something like this (or [define your own protocol](../../data_preparation)). 
 
